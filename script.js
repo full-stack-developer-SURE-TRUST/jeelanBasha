@@ -1,5 +1,5 @@
 
-const colors = ["#F08080","#FA8072","#E9967A","#FFA07A"];
+const colors = ["#F08080","#FA8072","#E9967A","#FFA07A" ,"#ff4000","#40ff00","#0040ff"];
 const btn = document.getElementById("btn");
 const color= document.querySelector(".color");
 
