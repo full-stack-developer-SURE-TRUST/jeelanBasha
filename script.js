@@ -1,15 +1,43 @@
 
-const colors = ["#F08080","#FA8072","#E9967A","#FFA07A" ,"#ff4000","#40ff00","#0040ff"];
-const btn = document.getElementById("btn");
-const color= document.querySelector(".color");
+ const sub = document.querySelector('.sub');
+ const  res = document.querySelector('.res');
+const  add = document.querySelector('.add');
 
-btn.addEventListener("click",function(){
-  const randonNumber= getradomNumber();
+ const text = document.querySelector('.value');
+ sub.addEventListener('click',decrement)
+ res.addEventListener('click',reset)
+ add.addEventListener('click',increment)
 
-  document.body.style.background = colors[randonNumber];
-  color.textContent = colors[randonNumber];
-});
 
-function getradomNumber() {
-  return Math.floor(Math.random()*colors.length);
+ let i = 0;
+
+      function decrement(){
+        i -= 1 ;
+        text.textContent = i;
+        colours();
+      }
+
+      function reset(){
+        i =  0;
+        text.textContent = i;
+        colours();
+        }
+        function increment(){
+          i +=  1;
+          text.textContent = i ;
+          colours();
+      }
+
+ function colours(){
+      if( i > 0){
+        text.style.color="green";
+
+      }
+ else if( i < 0){
+          text.style.color="red";
+
+      }
+else{
+    text.style.color ="black";
 }
+ }
