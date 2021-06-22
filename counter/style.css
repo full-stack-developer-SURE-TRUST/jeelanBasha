@@ -1,0 +1,57 @@
+*{
+    margin:0rem;
+}
+body{
+     background-color: rgb(236, 255, 127);
+
+}
+
+ .main  {
+     display:grid;
+     place-items:center;
+     margin: 2rem; 
+}
+.main h1{
+    font-size: 4rem;
+    margin:0;
+    color:blueviolet;
+    
+}
+.value{
+    font-size: 6rem;
+    margin:0;
+    color:#333;
+    background-color:#f1f5f8;
+}
+
+.btn{
+    border: radius 0.5em;
+    box-shadow: 4px 4px 9px rgb(red , green, blue);
+    outline:none;
+     margin:2rem;
+     color:rgb(186,194,197);
+     cursor:pointer;
+     background-color: transparent;
+     font-size:1.2rem;
+     padding:0.5rem 1.5rem;
+     transition:all 0.5s ease;
+     border:none;
+}
+.btn:hover{
+    box-shadow: 6px 6px 10px rgb(68,68,68);
+    outline:coral;
+    background-color: #333;
+    color:crimson;
+    border:none;
+}
+
+.option{
+     box-shadow:10px 10px 10px rgb(68,68,68);
+     transition:0.5s;
+     cursor:pointer;
+     text-align:center ;
+
+}
+
+
+
